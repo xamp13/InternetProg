@@ -2,120 +2,150 @@
 <html>
 
 <head>
-    <title>Афиша</title>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    ym(70828264, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/70828264" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
 
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>   
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <title>Афиша</title>
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html">Афиша</a>
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">ОБО ВСЁМ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">КИНО</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="music-chart.html">МУЗЫКА</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="order.html">КОНЦЕРТЫ</a>
-            </li>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">ВОЙТИ</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
-            <button class="btn btn-outline-success " type="submit">Искать</button>
-          </form>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="index.html">Афиша</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">ОБО ВСЁМ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">КИНО</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="music-chart.html">МУЗЫКА</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="order.html">КОНЦЕРТЫ</a>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ВОЙТИ</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+      <button class="btn btn-outline-success " type="submit">Искать</button>
+    </form>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4 py-5">
+        <h5 class="textgeneral">Концерты в Ульяновске</h5>
+        <div class="card my-3 cardconcert1">
+          <div class="exmpl">
+            <img src="imgs/morgen.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">MORGENSHTERN</h6>
+            <p class="card-text">Папа показал Москве, что такое настоящий концерт. А теперь покажет тебе. Встречай в
+              своем городе! 🔥</p>
+          </div>
         </div>
-      </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-4 py-5">
-                <h5 class="textgeneral">Концерты в Ульяновске</h5>
-                    <div class="card my-3 cardconcert1">
-                          <div class="exmpl">
-                            <img src="imgs/morgen.jpg" class="card-img-top" alt="...">
-                          </div>
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-muted">MORGENSHTERN</h6>
-                            <p class="card-text">Папа показал Москве, что такое настоящий концерт. А теперь покажет тебе. Встречай в своем городе! 🔥</p>
-                        </div>
-                    </div>
-                <h5 class="textnewfilms">Новинки кино</h5> 
-                <div class="card my-3 cardfilm1">
-                  <div class="exmpl">
-                    <img src="imgs/dovod.jpg" class="card-img-top" alt="...">
-                  </div>
-                    <div class="card-body">
-                        <h6 class="card-subtitle mb-2 text-muted">Довод</h6>
-                        <p class="card-text">После теракта в киевском оперном театре агент ЦРУ объединяется с британской разведкой, чтобы противостоять русскому олигарху, который сколотил состояние на торговле оружием. </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-4 py-5">
-                    <div class="card my-3 cardconcert2">
-                      <div class="exmpl">
-                        <img src="imgs/haski.jpg" class="card-img-top" alt="...">
-                      </div>
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-muted">Хаски</h6>
-                            <p class="card-text">Долгожданное событие, для реализации которого потребовалось много ресурсов и творческого опыта. </p>
-                        </div>
-                    </div>
-                <div class="card my-3 cardfilm2">
-                    <div class="exmpl">
-                    <img src="imgs/borat.jpg" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h6 class="card-subtitle mb-2 text-muted">Борат 2</h6>
-                        <p class="card-text">Тут не нужно комментариев. Это Борат. И он... Снова в Америке.</p>
-                    </div>
-                </div>
-            </div>
+        <h5 class="textnewfilms">Новинки кино</h5>
+        <div class="card my-3 cardfilm1">
+          <div class="exmpl">
+            <img src="imgs/dovod.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Довод</h6>
+            <p class="card-text">После теракта в киевском оперном театре агент ЦРУ объединяется с британской разведкой,
+              чтобы противостоять русскому олигарху, который сколотил состояние на торговле оружием. </p>
+          </div>
+        </div>
+      </div>
 
-            <div class="col-4 py-5">
-                <h5 class="textnews">Новости</h5> 
-                <div class="list-group listnewsclass">
-                    <a href="#" class="list-group-item list-group-item-action active">
-                      <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Моргенштерн признан «женщиной года»</h5>
-                        <small>3 часа назад</small>
-                      </div>
-                      <p class="mb-1">Главная информация статьи для привлечения внимания к статье.</p>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                      <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Загловок статьи №2</h5>
-                        <small class="text-muted">3 дня назад</small>
-                      </div>
-                      <p class="mb-1">Главная информация статьи для привлечения внимания к статье.</p>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                      <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Загловок статьи №3</h5>
-                        <small class="text-muted">4 октября</small>
-                      </div>
-                      <p class="mb-1">Главная информация статьи для привлечения внимания к статье.</p>
-                    </a>
-                  </div>
-            </div>
+      <div class="col-4 py-5">
+        <div class="card my-3 cardconcert2">
+          <div class="exmpl">
+            <img src="imgs/haski.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Хаски</h6>
+            <p class="card-text">Долгожданное событие, для реализации которого потребовалось много ресурсов и
+              творческого опыта. </p>
+          </div>
         </div>
-        </div>   
-    </div>     
+        <div class="card my-3 cardfilm2">
+          <div class="exmpl">
+            <img src="imgs/borat.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Борат 2</h6>
+            <p class="card-text">Тут не нужно комментариев. Это Борат. И он... Снова в Америке.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4 py-5">
+        <h5 class="textnews">Новости</h5>
+        <div class="list-group listnewsclass">
+          <a href="#" class="list-group-item list-group-item-action active">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Моргенштерн признан «женщиной года»</h5>
+              <small>3 часа назад</small>
+            </div>
+            <p class="mb-1">Главная информация статьи для привлечения внимания к статье.</p>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Загловок статьи №2</h5>
+              <small class="text-muted">3 дня назад</small>
+            </div>
+            <p class="mb-1">Главная информация статьи для привлечения внимания к статье.</p>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Загловок статьи №3</h5>
+              <small class="text-muted">4 октября</small>
+            </div>
+            <p class="mb-1">Главная информация статьи для привлечения внимания к статье.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 </body>
+
 </html>

@@ -1,110 +1,152 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Заказ билета</title>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    ym(70828264, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/70828264" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
 
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <title>Заказ билета</title>
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js"></script>
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html">Афиша</a>
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">ОБО ВСЁМ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">КИНО</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="music-chart.html">МУЗЫКА</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="order.html">КОНЦЕРТЫ</a>
-            </li>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">ВОЙТИ</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
-            <button class="btn btn-outline-success " type="submit">Искать</button>
-          </form>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="index.html">Афиша</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">ОБО ВСЁМ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">КИНО</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="music-chart.html">МУЗЫКА</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="order.html">КОНЦЕРТЫ</a>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ВОЙТИ</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+      <button class="btn btn-outline-success " type="submit">Искать</button>
+    </form>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4 py-5">
+        <div class="card my-3">
+          <div class="exmpl">
+            <img src="imgs/depoconcert.jpg" class="card-img-top" alt="Картинка мероприятия">
+          </div>
+          <div class="card-body">
+            <p class="card-text">Waves Booking представляет:<br> Современная музыка обладает уникальной особенностью —
+              она интенсивно меняет вектор своего развития, хладнокровно отбрасывая примитивное звучание и однодневных
+              фрешменов.
+              <br> <br> Однако в жанре имеется важное исключение из правил, способное удивлять нас из года в год —
+              Boulevard Depo и его творчество. «Old Blood» — новое творение артиста, выточенное из жизненного опыта и
+              передающее подлинное
+              отражение мудрости автора, в совокупности образуя целостную картину личного взросления.<br> <br> Наиболее
+              приемлемым способом прочувствовать эту картину являются живые выступления в 34 городах России, Казахстана,
+              Украины и
+              Беларуси, непременно входящие в презентацию релиза. Концертный тур «Old Blood» положит свое начало уже
+              этой осенью!<br> <br>
+            </p>
+          </div>
         </div>
-      </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-4 py-5">
-                    <div class="card my-3">
-                      <div class="exmpl">
-                        <img src="imgs/depoconcert.jpg" class="card-img-top" alt="Картинка мероприятия">
-                      </div>
-                        <div class="card-body">
-                            <p class="card-text">Waves Booking представляет:<br>
+      </div>
 
-                              Современная музыка обладает уникальной особенностью — она интенсивно меняет вектор своего развития, хладнокровно отбрасывая примитивное звучание и однодневных фрешменов.<br> <br>
-                              
-                              Однако в жанре имеется важное исключение из правил, способное удивлять нас из года в год — Boulevard Depo и его творчество. «Old Blood» — новое творение артиста, выточенное из жизненного опыта и передающее подлинное отражение мудрости автора, в совокупности образуя целостную картину личного взросления.<br> <br>
-                              
-                              Наиболее приемлемым способом прочувствовать эту картину являются живые выступления в 34 городах России, Казахстана, Украины и Беларуси, непременно входящие в презентацию релиза. Концертный тур «Old Blood» положит свое начало уже этой осенью!<br> <br>
-                              </p>
-                        </div>
-                    </div>
+
+      <div class="col-8 py-5">
+        <h5>BOULEVARD DEPO / 21.04, УЛЬЯНОВСК @ ПЯТОЕ СОЛНЦЕ</h5>
+        <form>
+          <div class="mb-3">
+            <div>
+              <div class="lable-field-email">
+                Введите почтовый ящик
+              </div>
+              <input class="input-field" name="articleEmail">
             </div>
-            
-
-            <div class="col-8 py-5">
-                <h5>BOULEVARD DEPO / 21.04, УЛЬЯНОВСК @ ПЯТОЕ СОЛНЦЕ</h5> 
-                <form class="was-validated">
-                    <div class="mb-3">
-                      <label for="validationTextarea">Введите почтовый ящик</label>
-                      <textarea class="form-control is-invalid" id="validationTextarea" placeholder="example@gmail.com" required></textarea>
-                      <div class="receivemailtext">
-                      Вы получите билет на электронную почту.
-                      </div>
-                    </div>
-                  
-                    <div class="custom-control custom-checkbox mb-3">
-                      <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
-                      <label class="custom-control-label" for="customControlValidation1">Я подтверждаю введенные данные</label>
-
-                    </div>
-                  
-
-                    <div class="mb-3">
-                        <label for="validationTextarea">Выберите категорию билета</label>
-                      <select class="custom-select" required>
-                        <option value="">Выбрать...</option>
-                        <option value="1">Танцпол</option>
-                        <option value="2">VIP</option>
-                        <option value="3">FAN</option>
-                      </select>
-                      <div class="invalid-feedback">Вам нужно выбрать категорию билета</div>
-                    </div>
-                    <input class="btn btn-primary" type="submit" value="Перейти к покупке">
-                  </form>
-                  <p class="card-text"><br> Категории билетов: <br> <br>
-
-                    • ТАНЦПОЛ — доступ на танцпол и во все бары на площадке, гардероб. <br> <br>
-                    
-                    • ТАНЦПОЛ + вход без очереди — доступ на танцпол вне очереди, чтобы занять лучшие места перед сценой поближе к артисту. Доступ во все бары на площадке, гардероб.<br> <br>
-                    
-                    • VIP — место за столом с хорошим видом на сцену, персональное обслуживание официантами, доступ во все бары на площадке, гардероб. Каждый посетитель категории VIP получит фирменную афишу с автографом любимого артиста.<br> <br>
-                    
-                    • SUPER VIP — место за столом с премиальным видом на сцену, персональное обслуживание официантами, доступ во все бары на площадке, гардероб. Каждый посетитель категории Super VIP получит фирменную афишу с автографом Алишера.<br> <br>
-                    
-                    Данное мероприятие было перенесено. Билеты, приобретенные на старую дату действительны на новую дату, указанную к этому мероприятию.</p>
+            <div class="receivemailtext">
+              Вы получите билет на электронную почту.
             </div>
-        </div>
-        </div>   
-    </div>     
+          </div>
+
+          <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="customControlValidation1">
+            <label class="custom-control-label" for="customControlValidation1">Я подтверждаю введенные данные</label>
+          </div>
+
+
+          <div class="mb-3">
+            <label for="validationTextarea">Выберите категорию билета</label>
+            <select class="custom-select">
+              <option value="">Выбрать...</option>
+              <option value="1">Танцпол</option>
+              <option value="2">VIP</option>
+              <option value="3">FAN</option>
+            </select>
+            <div class="invalid-feedback">Вам нужно выбрать категорию билета</div>
+          </div>
+          <button type="submit" class="btn btn-create" id="submit" name="submit">
+            Купить
+          </button>
+        </form>
+        <p class="card-text"><br> Категории билетов: <br> <br> • ТАНЦПОЛ — доступ на танцпол и во все бары на площадке,
+          гардероб. <br> <br> • ТАНЦПОЛ + вход без очереди — доступ на танцпол вне очереди, чтобы занять лучшие места
+          перед сценой поближе к артисту. Доступ
+          во все бары на площадке, гардероб.<br> <br> • VIP — место за столом с хорошим видом на сцену, персональное
+          обслуживание официантами, доступ во все бары на площадке, гардероб. Каждый посетитель категории VIP получит
+          фирменную афишу
+          с автографом любимого артиста.<br>
+          <br> • SUPER VIP — место за столом с премиальным видом на сцену, персональное обслуживание официантами, доступ
+          во все бары на площадке, гардероб. Каждый посетитель категории Super VIP получит фирменную афишу с автографом
+          Алишера.
+          <br> <br> Данное мероприятие было перенесено. Билеты, приобретенные на старую дату действительны на новую
+          дату, указанную к этому мероприятию.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
 </body>
+
 </html>

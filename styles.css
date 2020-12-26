@@ -1,26 +1,28 @@
-body{
+body {
     font-size: 14px;
     font-weight: 200;
 }
 
-h5, h6{
+h5,
+h6 {
     font-style: italic;
 }
 
-.navbar-brand, .nav-link{
+.navbar-brand,
+.nav-link {
     font-size: 16px;
     font-weight: bolder;
     text-transform: uppercase;
 }
 
-.textgeneral{
+.textgeneral {
     position: absolute;
     width: 299px;
     top: 50px;
     left: 100px;
 }
 
-.cardconcert1{
+.cardconcert1 {
     position: absolute;
     width: 320px;
     height: 370px;
@@ -28,7 +30,7 @@ h5, h6{
     left: 100px;
 }
 
-.cardconcert2{
+.cardconcert2 {
     position: absolute;
     width: 320px;
     height: 370px;
@@ -36,14 +38,14 @@ h5, h6{
     left: 50px;
 }
 
-.textnewfilms{
+.textnewfilms {
     position: absolute;
     width: 299px;
     top: 480px;
     left: 100px;
 }
 
-.cardfilm1{
+.cardfilm1 {
     position: absolute;
     width: 320px;
     height: 330px;
@@ -51,7 +53,7 @@ h5, h6{
     left: 100px;
 }
 
-.cardfilm2{
+.cardfilm2 {
     position: absolute;
     width: 320px;
     height: 300px;
@@ -59,27 +61,27 @@ h5, h6{
     left: 50px;
 }
 
-.textnews{
+.textnews {
     position: absolute;
     width: 299px;
     top: 50px;
     left: 30px;
 }
 
-.listnewsclass{
+.listnewsclass {
     position: absolute;
     width: 350px;
     top: 85px;
     left: 30px;
 }
 
-.listencharttext{
+.listencharttext {
     position: absolute;
     width: 299px;
     top: 10px;
 }
 
-.chartrussia{
+.chartrussia {
     position: absolute;
     width: 320px;
     height: 170px;
@@ -87,7 +89,7 @@ h5, h6{
     left: 100px;
 }
 
-.chartword{
+.chartword {
     position: absolute;
     width: 320px;
     height: 170px;
@@ -95,7 +97,7 @@ h5, h6{
     left: 500px;
 }
 
-.userliked{
+.userliked {
     position: absolute;
     width: 384px;
     height: 170px;
@@ -103,22 +105,34 @@ h5, h6{
     top: 90px;
 }
 
-.test3{
+.test3 {
     background-color: #eeeeee;
     height: 200px;
 }
 
-.receivemailtext{
+.receivemailtext {
     font-size: smaller;
 }
 
-  .exmpl {
+.exmpl {
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .exmpl img {
+}
+
+.exmpl img {
     min-width: 50%;
     min-height: 50%;
-  }
+}
+
+.input-field {
+    width: 870px;
+}
+
+.btn-create {
+    background-color: #b1dbb4;
+    border: 1px solid #373A3C;
+    display: block;
+    width: 200px;
+}
